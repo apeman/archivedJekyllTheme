@@ -1,14 +1,20 @@
-<section class="headsec">
-<header>
-    <h1><a href='{{ site.url }}/' class="site-title">{{ site.name }}</a></h1>
-</header>
-<nav>
-    <a href='{{ site.url }}/'> Blog </a>
-    <a href='{{ site.url }}/about/'> About </a>
-    <a href='{{ site.url }}/archive/'> Archive </a> 
-</nav>
-<misc>
-    <button>ico</button>
-</misc>
-</section>
-<hr>
+
+<div class="wrapper">
+  <section class="channel">
+    <span class="bg_img" style="background-image:url(https://unsplash.it/1200/500?random);"></span>
+    <div class="profile_area">
+        <span class="thumb"></span>
+    </div>
+  </section>
+  <center> <a href="/index.html"><div class="site-title"> {{site.title}} </div></a></center>
+  <details>
+  <summary>Menu</summary>
+  <a class="page-link" href="{{site.url}}{{site.baseurl}}">Home</a>
+
+  {% for sitePage in site.pages %}
+  {% if sitePage.title %}
+  <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+  {% endif %}
+  {% endfor %}
+</details>
+</div>

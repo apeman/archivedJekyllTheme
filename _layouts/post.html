@@ -1,13 +1,31 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}{{ page.shortUrl }}</h1>
-<div class='separator'></div>
-<section>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-{{ content }}
+  <header class="post-header">
+    <a class="post-title-link"  href="{{page.url}}"><h1 class="post-title" itemprop="name headline">{{ page.title }}</h1></a>
+  <center>  <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p> {{paget.tags}}
+   </center>
+  </header>
 
-</section>
-        
-{% if site.disqus-id %} {% include comments.html %} {% endif %}
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
 
+</article>
+
+<footer class="postNavigation">
+  {% if page.previous.url %}
+    <a class="postPrev" href="{{page.previous.url}}">
+        &laquo; {{page.previous.title}}
+    </a>
+  {% endif %}
+  <br>
+  </br>
+  {% if page.next.url %}
+    <a class="postNext" href="{{page.next.url}}">
+        {{page.next.title}} &raquo;
+    </a>
+  {% endif %}
+  </footer>

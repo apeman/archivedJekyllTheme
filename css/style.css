@@ -1,24 +1,3 @@
-.headsec {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.5rem;
-}
-
-nav {
-    padding: 0.4rem;
-}
-nav a {
-    padding: 0 0.4rem;
-}
-.postlink {
-    padding: 0.3rem;
-    margin: 1rem 0;
-}
-.homecon {
-    background-color: rgb(255, 255, 255);
-    padding: 1rem;
-}
 * {
     box-sizing: border-box;
     vertical-align: baseline;
@@ -27,21 +6,7 @@ nav a {
 }
 
 /** Basic styling */
-body { 
-    font: 400 16px/1.5 "Frank Ruhl Libre", Helvetica, Arial, sans-serif; 
-    color: #111; 
-    -webkit-text-size-adjust: 100%; 
-    -webkit-font-feature-settings: "kern" 1; 
-    -moz-font-feature-settings: "kern" 1; 
-    -o-font-feature-settings: "kern" 1; 
-    font-feature-settings: "kern" 1; 
-    font-kerning: normal; 
-    font-display: swap; 
-    background-image: url(https://unsplash.it/1200/500?random); 
-    background: no-repeat 50% 0;
-    background-size: cover;
-    background-position: center; 
-}
+body { font: 400 16px/1.5 "Frank Ruhl Libre", Helvetica, Arial, sans-serif; color: #111; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; font-display: swap; }
 
 @media screen and (min-width: 1200px) {
     body::-webkit-scrollbar {
@@ -57,7 +22,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
     list-style-type: none; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 10px; }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
 
 /** Images */
 img { max-width: 100%; vertical-align: middle; }
@@ -101,8 +66,13 @@ section {
     max-width: 880px;
     margin: 0 auto;
 }
-.channel {
-    margin-bottom: 10rem;
+summary {
+    padding: 2rem;
+}
+details a{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 8px 12px;
 }
 .bg_img {
 position: relative;
@@ -172,27 +142,4 @@ img {
 .site-title {
   margin-top: 7rem;
   font-size: 4rem;
-  color: #3cb371;
 }
-a,a:visited{color:inherit}
-a:hover,a:visited:hover{color:dodgerblue}
-blockquote{background:#f9f9f9;border-left:5px solid black;font-size:120%;margin:2rem 0;padding:1rem}blockquote p{margin:0}
-blockquote footer{font-size:80%;margin:1rem 0 0 0}
-dl dt{margin-bottom:0.5rem}
-dl dd{font-style:italic;margin-bottom:2rem}
-code,.highlight{background:#edf2f7;overflow:auto}
-code{word-break:break-all}code{padding:0.1rem 0.3rem}
-pre{padding:1em}
-.date{opacity:0.6}html{box-sizing:border-box;margin:0;padding:0}
-*,*:before,*:after{box-sizing:inherit}
-main{margin:0 auto;max-width:50rem}
-main{background:white;border:2px solid #e9ecef;-webkit-box-shadow:0 0.75rem 1.5rem rgba(18,38,63,0.03);box-shadow:0 0.75rem 1.5rem rgba(18,38,63,0.03);padding:2rem 3rem}
-ul,ol{padding:0;list-style-position:inside}
-table{border-collapse:collapse;text-align:left;width:100%}
-table tr{border-bottom:1px solid black}
-table td{padding:0.5rem}
-img{width:100%;margin:0.5rem 0}
-nav ul{list-style:none !important;padding:0;text-align:right}
-nav ul li{display:inline-block}
-nav a,nav a:visited{margin:0.5rem;text-decoration:none;font-size:0.875rem;text-transform:uppercase;color:inherit}
-footer{margin:1rem 0;text-align:center;color:inherit}
