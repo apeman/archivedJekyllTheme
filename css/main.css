@@ -1,3 +1,19 @@
 .headsec {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+nav {
+    padding: 0.4rem;
+}
+nav a {
+    padding: 0 0.4rem;
+}
+.postlink {
+    border: 1ps solid #222;
+    padding: 0.2rem;
+}
+.homecon {
+    padding: 0.4rem;
 }

@@ -2,17 +2,24 @@
 layout: default
 ---
 
+<section class="homecon">
+
 {% for post in paginator.posts %}
-<section>
+<article class="postlink">
   <h2>
     <a href='{{ site.url }}{{ post.url }}' title='{{ post.title }}'>
       {{ post.title }}
     </a>
+    <br>
+    <span>{{ post.author }}</span>
+    <br>
+    <span>{{ post.tag }}</span>
   </h2>
   
   <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
-</section>       
+</article>       
 {% endfor %}
+</section>
 
 {% if paginator.previous_page %}
 <a href='{{ site.url }}{{ paginator.previous_page_path }}'>Previous</a>
