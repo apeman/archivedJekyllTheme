@@ -4,6 +4,7 @@
     align-items: center;
     padding: 0 0.5rem;
 }
+
 nav {
     padding: 0.4rem;
 }
@@ -15,7 +16,8 @@ nav a {
     margin: 1rem 0;
 }
 .homecon {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
 }
 * {
     box-sizing: border-box;
@@ -25,7 +27,21 @@ nav a {
 }
 
 /** Basic styling */
-body { font: 400 16px/1.5 "Frank Ruhl Libre", Helvetica, Arial, sans-serif; color: #111; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; font-display: swap; background-image: url(https://unsplash.it/1200/500?random); }
+body { 
+    font: 400 16px/1.5 "Frank Ruhl Libre", Helvetica, Arial, sans-serif; 
+    color: #111; 
+    -webkit-text-size-adjust: 100%; 
+    -webkit-font-feature-settings: "kern" 1; 
+    -moz-font-feature-settings: "kern" 1; 
+    -o-font-feature-settings: "kern" 1; 
+    font-feature-settings: "kern" 1; 
+    font-kerning: normal; 
+    font-display: swap; 
+    background-image: url(https://unsplash.it/1200/500?random); 
+    background: no-repeat 50% 0;
+    background-size: cover;
+    background-position: center; 
+}
 
 @media screen and (min-width: 1200px) {
     body::-webkit-scrollbar {
@@ -156,6 +172,7 @@ img {
 .site-title {
   margin-top: 7rem;
   font-size: 4rem;
+  color: #3cb371;
 }
 a,a:visited{color:inherit}
 a:hover,a:visited:hover{color:dodgerblue}
