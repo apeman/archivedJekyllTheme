@@ -1,5 +1,14 @@
-
-<div class="wrapper">
+<section>
+  <details>
+    <summary>Menu</summary>
+    <a class="page-link" href="{{site.url}}{{site.baseurl}}">Home</a>
+  
+    {% for sitePage in site.pages %}
+    {% if sitePage.title %}
+    <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+    {% endif %}
+    {% endfor %}
+  </details>
   <section class="channel">
     <span class="bg_img" style="background-image:url(https://unsplash.it/1200/500?random);"></span>
     <div class="profile_area">
@@ -7,14 +16,4 @@
     </div>
   </section>
   <center> <a href="/index.html"><div class="site-title"> {{site.title}} </div></a></center>
-  <details>
-  <summary>Menu</summary>
-  <a class="page-link" href="{{site.url}}{{site.baseurl}}">Home</a>
-
-  {% for sitePage in site.pages %}
-  {% if sitePage.title %}
-  <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
-  {% endif %}
-  {% endfor %}
-</details>
-</div>
+</section>
